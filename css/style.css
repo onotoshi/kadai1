@@ -1,0 +1,245 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: darkgrey;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  margin-right: auto;
+}
+
+.menu-item {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+.full-img {
+  position: relative;
+  width: 100%;
+  height: auto; /* 画像の自然な高さを保持 */
+}
+
+.full-img img {
+  width: 100%;
+  height: auto;
+  display: block; /* 余分なスペースを排除 */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* デフォルトのテキストカラー */
+}
+
+.text-top {
+  display: block; /* ブロックレベルで表示して改行する */
+  font-size: 50px; /* フォントサイズを大きく */
+  color: white; /* 色を黄色に */
+}
+
+.text-bottom {
+  display: block; /* これもブロックレベルで表示 */
+  font-size: 30px; /* フォントサイズを少し小さく */
+  color: white; /* 色をオレンジに */
+}
+
+header h2 {
+  display: none;/
+}
+.about-section h2 {
+  display: block;
+}
+
+/* koko */
+.about-section {
+  text-align: center; /* テキストを中央寄せにする */
+  padding: 40px; /* 上下左右の余白を追加 */
+}
+.about-title {
+  margin-top: 150px; /* h2要素の上部に余白を追加 */
+  margin-bottom: 60px; /* h2要素の下部に余白を追加 */
+}
+.about-description {
+  font-size: 20px; /* 文字の大きさを設定 */
+}
+/* 既存のスタイルは省略 */
+
+.mySlides {
+  display: none;
+}
+/* ここ */
+/* 既存のスタイルは省略 */
+
+.slideshow-container {
+  white-space: nowrap; /* 画像が横に並ぶようにする */
+  text-align: center; /* 画像を中央揃え */
+  width: 100%; /* 幅を100%に設定 */
+}
+
+.mySlides {
+  display: inline-block; /* 画像を横に並べる */
+  width: calc(23% - 20px); /* 画像の幅を25%に設定（余白を考慮して10px減らす） */
+  vertical-align: top; /* 画像を上端に揃える */
+  margin: 0 10px; /* 画像の間に余白を追加 */
+}
+
+.course-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.course-title {
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+
+.course-description {
+  font-size: 18px;
+}
+
+
+/* 既存のスタイル */
+.photo-section {
+  width: 100%;
+  overflow: auto;
+  padding: 20px 0;
+}
+/* その他の既存のスタイル設定... */
+.photo-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.left-photo .photo,
+.right-photo .photo {
+  flex-basis: 50%;
+  max-width: 50%;
+  height: auto;
+}
+
+.left-photo .text,
+.right-photo .text {
+  flex-basis: 50%;
+  max-width: 50%;
+  padding: 0 20px;
+}
+
+.right-photo {
+  display: flex;
+  flex-direction: row-reverse; /* このプロパティが写真を右に配置 */
+}
+
+.right-photo .text {
+  padding-left: 20px; /* テキストの左パディングを調整 */
+}
+
+@media (max-width: 600px) {
+  .photo-text-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .photo, .text {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+.hidden-title {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+
+.news-section {
+  padding: 80px 0; /* 上下に大きな余白を設定 */
+  background-color: #f8f8f8; /* 背景色を軽く設定して区別 */
+}
+
+.news-title {
+  font-size: 24px; /* タイトルのフォントサイズを大きく設定 */
+  margin-bottom: 20px; /* タイトル下の余白 */
+}
+
+.news-item {
+  font-size: 18px; /* ニュースアイテムのフォントサイズ設定 */
+  line-height: 1.6; /* 行間を適度に設定 */
+  margin-bottom: 20px; /* ニュースアイテム間の余白 */
+}
+
+/* Accessセクションのスタイリング */
+.access-section {
+  background: white; /* 背景色 */
+  padding: 20px; /* パディング */
+  margin: 20px 0; /* 上下マージン */
+  text-align: left; /* テキストの左揃え */
+}
+
+.map-container iframe {
+  width: 100%; /* 地図の幅 */
+  height: 400px; /* 地図の高さ */
+  border: none; /* 枠線の除去 */
+}
+
+/* 追加のセクションスタイル */
+.about-section, .course-section, .photo-section, .news-section {
+  margin: 20px 0; /* セクションのマージン */
+  background: #fff; /* 背景色 */
+  padding: 20px; /* パディング */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影の追加 */
+}
+
+.contact-section {
+  padding: 60px 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.contact-section p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  margin-top: 6px; /* Margin top */
+  margin-bottom: 16px; /* Margin bottom */
+  display: inline-block; /* Making sure it is inline-block */
+  border: 1px solid #ccc; /* Gray border */
+  box-sizing: border-box; /* Handling box sizing */
+}
+
+button {
+  background-color: #707070; /* Button color */
+  color: white; /* Text color */
+  padding: 14px 20px; /* Padding */
+  margin: 8px 0; /* Margin */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 100%; /* Full width */
+}
+
+button:hover {
+  opacity: 0.8; /* Slight opacity on hover */
+}
+
